@@ -54,20 +54,12 @@ for number = 1, 15 do
 		}
 	})
 
-	-- Support for stairsplus mod
+end
 
-	stairsplus:register_all(
-		"colouredstonebricks",
-		colour2,
-		"colouredstonebricks:"..colour2,
-		{
-			description = colour.." Stone Brick",
-			tiles = {"colouredstonebricks_"..colour2..".png"},
-			groups = {cracky=3},
-			sounds = default.node_sound_defaults(),
-			sunlight_propagates = true,
-		}
-	)
+-- Support for stairsplus mod
+
+if core.get_modpath( 'moreblocks' ) then
+	stairsplus.register_nodes ( 'colouredstonebricks', COLOURS2 )
 end
 
 minetest.register_alias("dye:dark_blue","dye:blue")
