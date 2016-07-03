@@ -56,12 +56,6 @@ for number = 1, 15 do
 
 end
 
--- Support for stairsplus mod
-
-if core.get_modpath( 'moreblocks' ) then
-	stairsplus.register_nodes ( 'colouredstonebricks', COLOURS2 )
-end
-
 minetest.register_alias("dye:dark_blue","dye:blue")
 minetest.register_alias("dye:dark_pink","dye:magenta")
 minetest.register_alias("dye:purple","dye:violet")
